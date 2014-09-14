@@ -1,0 +1,38 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Hospital Test App</title>
+    <meta name="description" content="Hospital Test app for 24/7saas">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet/less" href="less/bootstrap.less" />
+    <link rel="stylesheet" href="css/fadein.css">
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/less-1.7.0.min.js"></script>
+  </head>
+  <body ng-app="saas2App">
+    <div class="container">
+      <div class="header" ng-controller="HeaderController">
+        <h3>Hospital Test App</h3>
+        <hr>
+        <ul class="nav nav-pills col-md-12">
+          <li ng-class="navClass('#')" ><a ng-href="#">Hospital One</a></li>
+          <li ng-class="navClass('doctorstwo')"><a ng-href="#/doctorstwo">Hospital Two</a></li>
+        </ul>
+      </div>
+      <div class="clearfix"></div>
+      <hr>
+
+      <div ng-view=""></div>
+      <div class="clearfix"></div>
+      <hr>
+      <div class="footer">
+        <h4>Super Amazing Hospital App by Sean Anderson<h4>
+        <h4>Contact - <a href="mailto:ander562@uwm.edu">ander562@uwm.edu</a></h4>
+      </div>
+    </div>
+</body>
+</html>

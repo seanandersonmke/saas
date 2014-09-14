@@ -1,0 +1,20 @@
+{
+"hospitals":[
+    {"hospid":1, "name":"Best Hospital"},
+    {"hospid":2, "name":"Super Amazing Hospital"}      
+],
+"doctors":[
+{"hospid":1, "fname":"Bob", "lname": "Saget"},
+{"hospid":2, "fname": "Jimbo", "lname": "Dallas"}
+],
+"staffs":[
+{"hospid":1, "fname":"Jimmy", "lname": "John"},
+{"hospid":1, "fname":"Walter", "lname": "White"},
+{"hospid":1, "fname":"Tom", "lname": "Hanks"},
+{"hospid":1, "fname":"Brad", "lname": "Pitt"},
+{"hospid":2, "fname":"Brenda", "lname": "Hilton"},
+{"hospid":2, "fname":"Joe", "lname": "Shmo"},
+{"hospid":2, "fname":"Roger", "lname": "Waters"},
+{"hospid":2, "fname": "Alice", "lname": "Waters"} 
+]
+}

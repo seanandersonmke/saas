@@ -1,0 +1,21 @@
+<div ng-controller="HospitalController">
+  <h3 class="fadeinclass"><span class="glyphicon glyphicon-plus-sign"></span> Hospital Two</h3>
+<div class="col-md-4">
+  <h4><b>Hospital name:</b></h4>
+  <ul>
+  <li class="fadeinclass" ng-repeat="hospital in data.hospitals | filter:{'hospid': 2}:true">{{hospital.name}}</li>
+</ul>
+  </div>
+  <div class="col-md-4">
+    <h4><b>Doctor name:</b></h4>
+    <ul>
+    <li class="fadeinclass" ng-repeat="doctor in data.doctors | filter:{'hospid': 2}:true">{{doctor.fname + "&nbsp;" + doctor.lname}}</li>
+    </ul> 
+  </div>
+  <div class="col-md-4">
+    <h4><b>Hospital staff:</b></h4>
+    <ul>
+    <li class="fadeinclass" ng-repeat="staff in data.staffs | filter:{'hospid': 2}:true">{{staff.fname + "&nbsp;" + staff.lname}}</li>
+  </ul>
+  </div>
+</div>
